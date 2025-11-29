@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wishflow App</title>
+  <script src="https://cdn.jsdelivr.net/npm/tailwindcss-cdn@3.4.10/tailwindcss.js"></script>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style type="text/tailwindcss" data-teda="tailwind-apply">
+    @layer components {
+      .btn-primary { @apply bg-[#0f4c3a] text-white px-5 py-2.5 rounded-lg shadow-sm hover:bg-[#16634d] focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 transition-all font-medium; }
+    }
+  </style>
+</head>
+<body class="bg-[#fcfbf9] text-gray-900 font-sans">
+
+  <div id="app-container" class="min-h-screen">
+    <!-- Dynamic content loads here -->
+    <div class="flex items-center justify-center h-screen">
+       <div class="animate-pulse flex flex-col items-center">
+          <div class="h-12 w-12 bg-emerald-200 rounded-full mb-4"></div>
+          <div class="h-4 w-32 bg-gray-200 rounded"></div>
+       </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="scripts/helpers.js"></script>
+  <script src="scripts/ai.js"></script>
+  <script src="scripts/ui.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
